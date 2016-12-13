@@ -1,7 +1,7 @@
 // "If I have seen further it is by standing on ye sholders of Giants." Isaac Newton
 // Simple tool to get a better understandig of MPU6050 on a GY-521 
-// It use ypr and   
-
+// It use OUTPUT_READABLE_YAWPITCHROLL and OUTPUT_READABLE_WORLDACCEL 
+// thr-# 06.01.2015 
 
 import processing.serial.*;
 import processing.opengl.*;

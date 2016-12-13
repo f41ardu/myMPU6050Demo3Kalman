@@ -1,6 +1,6 @@
 // simple distance integration, to simple I would say 
 // assume that this need most improvement
-// I start to lok at 
+// I start to look at 
 // http://www.physics.udel.edu/~bnikolic/teaching/phys660/numerical_ode/ode.html   
 // amongst others 
 // thr-# 06.01.2015 
