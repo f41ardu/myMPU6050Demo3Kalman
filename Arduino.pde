@@ -32,6 +32,6 @@
             Serial.print(",");
             Serial.print((float)aaWorld.z/16384);
             Serial.print(",");
-            Serial.println(micros());
+            Serial.println(millis());
         #endif
 */ 

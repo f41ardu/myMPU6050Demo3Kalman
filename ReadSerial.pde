@@ -9,8 +9,11 @@ void serialEvent(Serial myPort) {
         msg = (split(myString, ','));
         for (i=0; i< 7; i++ ) {
           value[i]=float (msg[i]);
+          print(value[i]+" ");
+          println();
         }
-        deltaTime=abs(value[6]-timePrev)/1000.;
+        // arduino liefert ms
+        deltaTime=abs(value[6]-timePrev)/100.;
         timePrev=value[6];
 //        print(deltaTime);  
 //        println();

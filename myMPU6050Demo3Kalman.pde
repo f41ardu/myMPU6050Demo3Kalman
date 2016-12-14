@@ -2,6 +2,7 @@
 // Simple tool to get a better understandig of MPU6050 on a GY-521 
 // It use OUTPUT_READABLE_YAWPITCHROLL and OUTPUT_READABLE_WORLDACCEL 
 // thr-# 06.01.2015 
+// use MPU6050_DMP_Position
 
 import processing.serial.*;
 import processing.opengl.*;
@@ -47,14 +48,14 @@ ToxiclibsSupport gfx;
       filter_Y=new Kalman(.1,.001,.001,.0000000000001);
       filter_Z=new Kalman(.1,.001,.001,.0000000000001);
     
-      String portName="COM5";
-      myPort = new Serial(this, portName, 115200);
+      String portName="COM8";
+      myPort = new Serial(this, portName, 38400);
       myPort.bufferUntil(linefeed);
-      myPort.write('r');
+      myPort.write('r'); 
       frameRate(100);
       background(255);
       fill(246, 225, 65);
-      lights();
+      lights();  
     }
 
     void draw()
