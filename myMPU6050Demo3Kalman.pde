@@ -44,9 +44,9 @@ ToxiclibsSupport gfx;
       img2.resize(200, 100);
       imageMode(CENTER);
     
-      filter_X=new Kalman(.1,.001,.001,.0000000000001);
-      filter_Y=new Kalman(.1,.001,.001,.0000000000001);
-      filter_Z=new Kalman(.1,.001,.001,.0000000000001);
+      filter_X=new Kalman(.1,.001,.001,.0000001);
+      filter_Y=new Kalman(.1,.001,.001,.0000001);
+      filter_Z=new Kalman(.1,.001,.001,.0000001);
     
       String portName="COM8";
       myPort = new Serial(this, portName, 38400);
