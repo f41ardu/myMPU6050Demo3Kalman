@@ -48,8 +48,8 @@ ToxiclibsSupport gfx;
       filter_Y=new Kalman(.1,.001,.001,.0000001);
       filter_Z=new Kalman(.1,.001,.001,.0000001);
     
-      String portName="COM8";
-      myPort = new Serial(this, portName, 38400);
+      String portName = Serial.list()[1];
+      myPort = new Serial(this, portName, 115200);
       myPort.bufferUntil(linefeed);
       myPort.write('r'); 
       frameRate(100);
