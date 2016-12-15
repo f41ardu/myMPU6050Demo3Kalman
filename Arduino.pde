@@ -2,8 +2,8 @@
 // Enable  OUTPUT_READABLE_YAWPITCHROLL and OUTPUT_READABLE_WORLDACCEL 
 // and get rid of all other print and println statements
 // don't forget to calibrate your GY-521 !!!! 
-// thr-# 06.01.2015 
-// 
+// thr-# 15.12.2016 
+// Use myMPU6050Demo3Kalman_2 with local offsets
 /* 
 
  #ifdef OUTPUT_READABLE_YAWPITCHROLL

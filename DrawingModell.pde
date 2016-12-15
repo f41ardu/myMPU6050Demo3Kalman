@@ -1,6 +1,6 @@
 // a simple modell with cordinates axis and a cool model of the chip
 // you may use drawsimple instead of. 
-// thr-# 06.01.2015 
+// thr-# 15.12.2016 
 
 void drawsimple() {
       //     fill(255,255,0);

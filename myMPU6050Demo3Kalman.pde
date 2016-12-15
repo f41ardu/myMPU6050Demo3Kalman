@@ -1,8 +1,8 @@
 // "If I have seen further it is by standing on ye sholders of Giants." Isaac Newton
 // Simple tool to get a better understandig of MPU6050 on a GY-521 
 // It use OUTPUT_READABLE_YAWPITCHROLL and OUTPUT_READABLE_WORLDACCEL 
-// thr-# 06.01.2015 
-// use MPU6050_DMP_Position
+// thr-# 15.12.2016 
+// use Use myMPU6050Demo3Kalman_2 with local offsets
 
 import processing.serial.*;
 import processing.opengl.*;

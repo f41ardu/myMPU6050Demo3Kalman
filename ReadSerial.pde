@@ -1,5 +1,5 @@
-// require MPU6050_DMP_Position configured on Arduino (see Arduino) 
-// thr-# 06.01.2015 
+// require myMPU6050Demo3Kalman_2 configured on an Arduino (see Arduino) 
+// thr-# 15.12.2016
 void serialEvent(Serial myPort) {
   interval = millis();
   while (myPort.available() > 0) {

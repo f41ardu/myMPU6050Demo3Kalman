@@ -3,7 +3,7 @@
 // I start to look at 
 // http://www.physics.udel.edu/~bnikolic/teaching/phys660/numerical_ode/ode.html   
 // amongst others 
-// thr-# 06.01.2015 
+// thr-# 15.12.2016 
 
 void position() {
   float[] ac = new float[3];
