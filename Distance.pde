@@ -7,9 +7,9 @@
 
 void position() {
   float[] ac = new float[3];
-  ac[0] = filter_X.update(value[3]);
-  ac[1] = filter_Y.update(value[4]);
-  ac[2] = filter_Z.update(value[5]);
+  ac[0] = filter_X.update(value[3]/16348);
+  ac[1] = filter_Y.update(value[4]/16348);
+  ac[2] = filter_Z.update(value[5]/16348);
   
   for (i=0; i < 3; i++ ) {
   velocity[i] = (float)(ac[i]*deltaTime); //1000 added to get the same units

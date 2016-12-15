@@ -12,7 +12,7 @@ void serialEvent(Serial myPort) {
           value[i]=float (msg[i]);
         }
         // arduino liefert ms
-        deltaTime=abs(value[6]-timePrev)/100.;
+        deltaTime=abs(value[6]-timePrev);
         timePrev=value[6];
       }
     }
