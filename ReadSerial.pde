@@ -11,6 +11,10 @@ void serialEvent(Serial myPort) {
         for (int i=0; i<7; i++ ) {
           value[i]=float (msg[i]);
         }
+        for (int i=3; i<6; i++ ) {
+          value[i]=0.0; //float (msg[i]);
+        }
+        // value[5]=value[5];
         // arduino liefert ms
         deltaTime=abs(value[6]-timePrev);
         timePrev=value[6];

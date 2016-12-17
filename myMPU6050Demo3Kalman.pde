@@ -3,7 +3,8 @@
 // It use OUTPUT_READABLE_YAWPITCHROLL and OUTPUT_READABLE_WORLDACCEL 
 // thr-# 15.12.2016 
 // use Use myMPU6050Demo3Kalman_2 with local offsets
-
+// version 0.1.1 
+// correct yaw,pitch, roll angels (gimbal lock) 
 import processing.serial.*;
 import processing.opengl.*;
 import toxi.geom.*;
@@ -76,11 +77,16 @@ ToxiclibsSupport gfx;
     translate(-newpos[0],0,0); // y 
     translate(0,-newpos[2],0); // z
     translate(width / 2, height / 2);
-    rotateX(value[2]);   // MPU y  
-    rotateY(-value[0]);  // MPU z
-    rotateZ(value[1]);   // MPU x
+    //    rotateX(value[2]);   // MPU y  
+    //    rotateY(-value[0]);  // MPU z
+    //   rotateZ(value[1]);   // MPU x
+    // 3-step rotation from yaw/pitch/roll angles (gimbal lock!)
+    // ...and other weirdness I haven't figured out yet
+    rotateY(-value[0]);
+    rotateZ(-value[1]);
+    rotateX(-value[2]);
     position();     
-    drawbox();
+    drawbox();  
     popMatrix();
 }
 // set position 0,0,0
